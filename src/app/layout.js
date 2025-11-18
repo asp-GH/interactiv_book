@@ -1,18 +1,13 @@
-import type { Metadata } from 'next'
-import './globals.css'
+  import './globals.css'
 
-export const metadata: Metadata = {
-  title: 'Живая книга: Преступление и наказание',
+export const metadata = {
+title: 'Живая книга: Преступление и наказание',
   description: 'Персонажи говорят с тобой во время чтения',
 }
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+export default function RootLayout({ children }) {
   return (
-    <html lang="ru">
+    <html lang="en">
       <body>{children}</body>
     </html>
   )
